@@ -2,7 +2,7 @@
 #shebang to run in the command line
 
 
-class Find_Replace
+class FindReplace
   def initialize (input)
     @input = input
   end
@@ -15,3 +15,12 @@ class Find_Replace
     new_array.join(" ")
   end
 end
+
+puts "Enter a phrase"
+input= gets.chomp
+puts "Enter the word you want replaced."
+find= gets.chomp
+puts "What word do you want it replaced with?"
+replace= gets.chomp
+new_word = FindReplace.new(input)
+puts new_word.search(find, replace)
